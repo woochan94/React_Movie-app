@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Movie from './Movie'; 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// 모든 컴포넌트는 render를 가지고 있다. 
+// render의 기능은 뭔가를 보여주는, 출력하는 기능이다. 
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Movie />
+      </div>
+    );
+  }
 }
 
 export default App;
