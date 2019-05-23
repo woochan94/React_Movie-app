@@ -14,15 +14,15 @@ function Movie({ poster, title, genres, summary }) {
                 <div className="Movie__Genres">
                     {genres.map((genre, index) => <MovieGenre genre={genre} key={index} />)}
                 </div>
-                <p className="Movie__Summary">
-                    <LinesEllipsis
-                        text={summary}
-                        maxLine='3'
-                        ellipsis='...'
-                        trimRight
-                        basedOn='letters' 
-                    />
-                </p>
+                <div className="Movie__Summary">
+                <LinesEllipsis
+                    text={summary}
+                    maxLine='3'
+                    ellipsis='...'
+                    trimRight
+                    basedOn='letters' 
+                />
+                </div>
             </div>
         </div>
     )
