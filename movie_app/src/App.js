@@ -27,9 +27,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {movies.map(movie => {
+        {movies.map((movie, index) => {
           // eslint-disable-next-line no-unused-expressions
-          return <Movie title={movie.title} poster={movie.poster} />
+          return <Movie title={movie.title} poster={movie.poster} key={index} />
         })}
       </div>
     );
